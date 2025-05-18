@@ -1,0 +1,5 @@
+Flask
+Flask-Cors
+requests
+beautifulsoup4
+lxml # Optional, but good for BS4 parsing

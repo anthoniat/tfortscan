@@ -1,0 +1,178 @@
+/* src/App.css */
+
+/* --- Global Styles --- */
+body {
+  background-color: #f8f9fa; /* Light grey background */
+  color: #212529; /* Darker default text */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Give the main app container some breathing room */
+.App {
+  flex: 1; /* Allow app to grow and push footer down */
+  padding-bottom: 3rem; /* Add space at the bottom */
+}
+
+/* --- Navbar Enhancements (Optional) --- */
+/* You can customize the navbar further if desired, but Bootstrap's default is clean */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 1.5rem; /* Add space below navbar */
+}
+
+/* --- Homepage Specific --- */
+.homepage-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.homepage-container h1 {
+  color: #0d6efd; /* Use primary color for main heading */
+}
+
+.homepage-disclaimer {
+  background-color: #fff3cd; /* Light yellow background */
+  border: 1px solid #ffeeba;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #664d03; /* Darker text for warning */
+}
+.homepage-disclaimer strong {
+   color: #856404;
+}
+
+.learn-more-section h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #6c757d; /* Secondary text color */
+}
+
+.list-group-item-action:hover {
+  background-color: #e9ecef; /* Subtle hover effect for info links */
+}
+
+
+/* --- Scan Page Specific --- */
+.scan-page-container h2 {
+    margin-bottom: 1.5rem;
+    color: #0d6efd;
+}
+
+.scan-page-container .form-control {
+    height: calc(1.5em + 1rem + 2px); /* Slightly taller input */
+    font-size: 1.1rem;
+}
+
+.scan-page-container .btn-primary {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.scan-page-container .spinner-border {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* --- Results Display Enhancements --- */
+.results-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Slightly more prominent shadow */
+  border: none; /* Remove default border if adding shadow */
+  margin-top: 2rem !important; /* Ensure consistent margin */
+}
+
+.results-card .card-header {
+  background-color: #6c757d; /* Secondary background for header */
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-bottom: none;
+}
+
+.results-card .table th {
+  font-weight: 600; /* Make table headers slightly bolder */
+  color: #495057;
+}
+
+.results-card .table {
+  margin-bottom: 0; /* Remove default table bottom margin inside card */
+}
+
+/* Style the check details section */
+.check-details-section {
+  background-color: #f8f9fa; /* Light background for separation */
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.check-details-section h5 {
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+.check-details-section strong {
+    color: #0d6efd; /* Primary color for detail labels */
+}
+
+.check-details-section .card { /* Style the inner cards for form details */
+    border: 1px solid #e9ecef;
+}
+
+.check-details-section code {
+  background-color: #e9ecef;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: #d63384; /* Bootstrap's pink for code */
+}
+
+/* Style the Next Steps section */
+.next-steps-section ul {
+  padding-left: 1.2rem; /* Indent list */
+}
+
+.next-steps-section li {
+  margin-bottom: 0.5rem; /* Add space between list items */
+}
+
+/* --- Info Pages --- */
+.info-page-container {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.info-page-container h2,
+.info-page-container h4 {
+    color: #0d6efd;
+}
+.info-page-container hr {
+    margin: 1.5rem 0;
+}
+.info-page-container ul {
+    padding-left: 1.5rem;
+}
+.info-page-container li {
+    margin-bottom: 0.75rem;
+}
+
+
+/* --- Responsive Adjustments (Example) --- */
+@media (max-width: 768px) {
+  .homepage-container h1 {
+    font-size: 2rem; /* Smaller heading on small screens */
+  }
+  .list-group.w-50 { /* Make info links full width on smaller screens */
+    width: 100% !important;
+  }
+}
